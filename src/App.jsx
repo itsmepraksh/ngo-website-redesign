@@ -1,10 +1,17 @@
-import Home from "./pages/Home"
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar" 
+import AppRoutes from "./routes/AppRoutes"
 
  
 
 const App = () => {
   return (
-    <Home/>
+    <div className=" w-full h-full">
+    <Navbar/> 
+      <AppRoutes/>
+    <Footer />
+    </div>
+
   )
 }
 

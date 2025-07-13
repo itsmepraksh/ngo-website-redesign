@@ -1,6 +1,6 @@
-import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+ 
 import Section1 from "../layouts/Section1"
+import Section2 from "../layouts/Section2"
 
  
 
@@ -10,7 +10,7 @@ const Home = () => {
         
     
     <Section1/>
-    
+    <Section2/>
     </div>
   )
 }

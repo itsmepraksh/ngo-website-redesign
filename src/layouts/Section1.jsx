@@ -1,7 +1,7 @@
 import ImageDesign from "../components/ImageDesign"
-import designUnderline from '../assets/images/design-underline.svg';
-import pinkSvg from '../assets/images/pink-elem.svg'
-import greenSvg from '../assets/images/green-elem.svg'
+import designUnderline from '../assets/svgs/design-underline.svg';
+import pinkSvg from '../assets/svgs/pink-elem.svg'
+import greenSvg from '../assets/svgs/green-elem.svg'
 
 const Section1 = () => {
   return (

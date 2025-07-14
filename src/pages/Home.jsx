@@ -6,7 +6,7 @@ import Section2 from "../layouts/Section2"
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mb-25">
         
     
     <Section1/>

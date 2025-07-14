@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <div id="menu" className=" flex items-center gap-4 ">
-        <button className="bg-white px-5 text-xs py-1 rounded-xl font-medium active:outline active:outline-2 focus:outline-red-500 active:scale-[0.9]">
+        <button className="bg-white px-5 text-xs py-1 rounded-xl font-medium active:outline active:outline-2 focus:outline-red-500 active:scale-[0.9] cursor-pointer">
           donate
         </button>
 

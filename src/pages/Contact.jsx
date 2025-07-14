@@ -1,11 +1,11 @@
-import designUnderline2 from "../assets/images/design-underline2.svg";
-import yellowSvg from "../assets/images/yellow-elem.svg"; 
+import designUnderline2 from "../assets/svgs/design-underline2.svg";
+import yellowSvg from "../assets/svgs/yellow-elem.svg"; 
 import Forms from "../components/Forms";
 import Logo from "../components/Logo";
 
 const Contact = () => {
   return (
-    <div className=" relative w-full md:flex xl:justify-center md:gap-5  p-6 md:pt-20 xl:px-[7%] ">
+    <div className=" relative w-full md:flex xl:justify-center md:gap-5  p-6 md:pt-20 xl:px-[7%] mb-25 ">
       <div id="details" className="md:w-1/2 xl:w-[45%]  " >
       <div id="part-one">
         <img

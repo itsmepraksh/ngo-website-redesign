@@ -10,31 +10,19 @@ import HeaderDetails from "../components/HeaderDetails";
 
 const Gallery = () => {
   return (
-    <div className=" relative w-full md:flex xl:justify-center md:gap-5  p-6 md:pt-20 xl:px-[7%] mb-25 ">
-      <HeaderDetails inputSvg={yellowSvg} headlineTxt={"Our community in pictures"} underlineSvg={designUnderline2} styleRoundSvg={" rotate-35 top-5 md:top-19 -left-[15%] md:-left-[7%] lg:-left-[5%] xl:left-[8%] "}/>
-      {/* <div id="part-one">
-        <img
-          src={yellowSvg}
-          alt="yellow-elem"
-          className="absolute rotate-35 top-5 md:top-19 -left-[15%] md:-left-[7%] lg:-left-[5%] xl:left-[8%] -z-[1]"
-        />
+    <div className=" relative w-full md:flex md:flex-col xl:justify-center md:gap-5  p-6 md:pt-20 xl:px-[7%] mb-25 ">
 
-        <h1 className="font-bold text-zinc-800 text-center text-4xl md:text-5xl pt-7 pb-5 md:py-10">
-          Our community in pictures
-        </h1>
-        <img
-          src={designUnderline2}
-          alt="design-underline"
-          className="flex justify-self-center"
-        />
-      </div> */}
-      <div id="gallery" className="flex flex-wrap gap-10 py-4 mt-4">
-        <img src={image2} alt="image-1" className="rounded-xl object-cover" />
-        <img src={image3} alt="" className="rounded-xl object-cover" />
-        <img src={image4} alt="" className="rounded-xl object-cover" />
-        <img src={image5} alt="" className="rounded-xl object-cover" />
-        <img src={image6} alt="" className="rounded-xl object-cover" />
-        <img src={image1} alt="" className="rounded-xl object-cover" />
+      <HeaderDetails inputSvg={yellowSvg} headlineTxt={"Our community in pictures"} headStyle={"lg:w-1/2"}  underlineSvg={designUnderline2} styleRoundSvg={" rotate-35 top-5 md:top-19 -left-[15%] md:left-[7%] lg:left-[25%] 2xl:left-[35%] "}
+      divContainer={"lg:flex lg:flex-col lg:items-center"}
+      />
+       
+      <div id="gallery" className="flex flex-wrap gap-10 lg:gap-5 py-4 mt-4">
+        <img src={image2} alt="image-1" className="rounded-xl object-cover lg:w-[48%]" />
+        <img src={image3} alt="image-2" className="rounded-xl object-cover lg:w-[48%]" />
+        <img src={image4} alt="image-3" className="rounded-xl object-cover lg:w-[48%]" />
+        <img src={image5} alt="image-4" className="rounded-xl object-cover lg:w-[48%]" />
+        <img src={image6} alt="image-5" className="rounded-xl object-cover lg:w-[48%]" />
+        <img src={image1} alt="image-6" className="rounded-xl object-cover lg:w-[48%]" />
       </div>
     </div>
   );

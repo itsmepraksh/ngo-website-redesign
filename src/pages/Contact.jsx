@@ -1,6 +1,6 @@
 import designUnderline2 from "../assets/svgs/design-underline2.svg";
 import yellowSvg from "../assets/svgs/yellow-elem.svg"; 
-import Forms from "../components/Forms";
+import ContactForm from "../components/ContactForm"; 
 import Logo from "../components/Logo";
 
 const Contact = () => {
@@ -57,7 +57,8 @@ const Contact = () => {
 
       </div>
 
-      <Forms edit={"md:w-1/2 xl:w-[45%] md:h-fit md:p-8"}/>
+      <ContactForm edit={"md:w-1/2 xl:w-[45%] md:h-fit md:p-8"}/>
+      
     </div>
   );
 };

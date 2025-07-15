@@ -1,6 +1,6 @@
  
 
-const Forms = ({edit}) => {
+const ContactForm = ({edit}) => {
   return (
     <form className={`flex flex-col rounded-2xl shadow-[0_6px_10px_rgba(0,0,0,0.2)] p-4 ${edit}`}>
       <label>Full name</label>
@@ -32,4 +32,4 @@ const Forms = ({edit}) => {
   );
 };
 
-export default Forms;
+export default ContactForm;

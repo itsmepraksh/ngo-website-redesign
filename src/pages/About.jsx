@@ -9,9 +9,9 @@ import underline2 from "../assets/svgs/design-underline.svg";
 import ContactForm from "../components/ContactForm";
 import ClippedImageSVG from "../components/ClippedImageSVG";
 
-import clipImage1 from "../assets/images/gallery-1.jpg"
-import clipImage2 from "../assets/images/gallery-2.jpg"
-import clipImage3 from "../assets/images/gallery-3.jpg"
+import clipImage1 from "../assets/images/gallery-img-1.jpg"
+import clipImage2 from "../assets/images/gallery-img-2.jpg"
+import clipImage3 from "../assets/images/gallery-img-3.jpg"
 
 const About = () => {
   return (

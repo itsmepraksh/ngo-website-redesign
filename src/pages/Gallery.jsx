@@ -1,11 +1,11 @@
 import designUnderline2 from "../assets/svgs/design-underline.svg";
 import yellowSvg from "../assets/svgs/yellow-elem.svg";
-import image1 from "../assets/images/gallery-1.jpg";
-import image2 from "../assets/images/gallery-2.jpg";
-import image3 from "../assets/images/gallery-3.jpg";
-import image4 from "../assets/images/gallery-4.jpg";
-import image5 from "../assets/images/gallery-5.jpg";
-import image6 from "../assets/images/gallery-6.jpg";
+import image1 from "../assets/images/gallery-img-1.jpg";
+import image2 from "../assets/images/gallery-img-2.jpg";
+import image3 from "../assets/images/gallery-img-3.jpg";
+import image4 from "../assets/images/gallery-img-4.jpg";
+import image5 from "../assets/images/gallery-img-5.jpg";
+import image6 from "../assets/images/gallery-img-6.jpg";
 import HeaderDetails from "../components/HeaderDetails";
 
 const Gallery = () => {

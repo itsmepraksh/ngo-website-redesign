@@ -27,9 +27,9 @@ const About = () => {
 
       <section
         id="shortIntro"
-        className="py-6 text-xs md:text-sm md:flex md:justify-center "
+        className="py-6 text-xs md:text-sm  2xl:text-base md:flex md:justify-center "
       >
-        <p className="md:w-[85%]">
+        <p className="md:w-[85%] lg:w-[60%]">
           Welcome to{" "}
           <span className="text-[#E65E00] font-medium text-sm">
             Baba Bhaskar Pawar Vrudhashram Trust
@@ -47,16 +47,16 @@ const About = () => {
 
       <section id="startup" className="flex flex-col items-center text-center">
         <div id="clipped-img" className="relative flex w-full gap-1 justify-center">
-          <ClippedImageSVG clipImage={clipImage1} />
-          <ClippedImageSVG clipImage={clipImage2} />
-          <ClippedImageSVG clipImage={clipImage3} />
+          <ClippedImageSVG elemStyle={"w-full md:w-[26%] lg:h-96 "} clipImage={clipImage1}  clipStyle={"h-full w-full object-cover "} imageRotation={0}/>
+          <ClippedImageSVG elemStyle={"md:w-[26%]"} clipImage={clipImage2}  clipStyle={"h-full w-full"} />
+          <ClippedImageSVG elemStyle={"md:w-[26%]"} clipImage={clipImage3}  clipStyle={"h-full w-full"} />
         </div>
 
         <h1 className="font-bold text-zinc-800 text-2xl py-4 md:text-5xl pt-7 pb-3 md:py-10">
           What Makes Us Different
         </h1>
         <img src={underline2} alt="Underline" className="my-5 md:mt-0" />
-        <p className="text-sm md:w-[80%]">
+        <p className="text-sm xl:text-normal md:w-[80%]">
           At Baba Bhaskar Pawar Vrudhashram Trust, we don’t just offer shelter,
           we offer belonging. Rooted in a dream of dignity for all, we open our
           hearts to the elderly, bedridden, and differently-abled. Here, every

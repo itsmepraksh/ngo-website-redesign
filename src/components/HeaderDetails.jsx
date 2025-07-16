@@ -1,8 +1,12 @@
  
+ import {motion} from "framer-motion"
 
 const HeaderDetails = ({inputSvg, headlineTxt,underlineSvg,underlineEdit, styleRoundSvg , headStyle , divContainer}) => {
   return (
-    <div id="part-one" className={`${divContainer}`}>
+    <motion.div 
+    initial={{opacity:0,x:-50}}
+    whileInView={{opacity:1,x:0,transition:{duration:0.5,ease:"anticipate"}}}
+    id="part-one" className={`${divContainer}`}>
       <img
         src={inputSvg}
         alt="yellow-elem"
@@ -17,7 +21,7 @@ const HeaderDetails = ({inputSvg, headlineTxt,underlineSvg,underlineEdit, styleR
         alt="design-underline"
         className={`flex justify-self-center ${underlineEdit}`}
       />
-    </div>
+    </motion.div>
   );
 };
 

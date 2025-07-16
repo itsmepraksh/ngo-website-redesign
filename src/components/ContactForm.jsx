@@ -1,8 +1,14 @@
  
+import {motion} from "motion/react";
 
 const ContactForm = ({edit}) => {
   return (
-    <form className={`flex flex-col rounded-2xl shadow-[0_6px_10px_rgba(0,0,0,0.2)] p-4 ${edit}`}>
+    <motion.form
+      initial={{opacity:0,y:-100}}
+      whileInView={{opacity:1,y:0}}
+      transition={{duration:0.9, delay:0.5}}
+      // animate={{opacity:1,y:0}}
+     className={`flex flex-col rounded-2xl shadow-[0_6px_10px_rgba(0,0,0,0.2)] p-4 ${edit}`}>
       <label>Full name</label>
       <input
         type="text"
@@ -28,7 +34,7 @@ const ContactForm = ({edit}) => {
       <button className="p-4 bg-[#FF6F00] rounded-3xl font-medium md:font-normal my-4 text-white active:scale-[0.9]">
         Submit application{" "}
       </button>
-    </form>
+    </motion.form>
   );
 };
 

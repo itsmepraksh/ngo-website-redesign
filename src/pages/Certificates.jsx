@@ -30,7 +30,7 @@ const Certificates = () => {
       </div>
       <div
         id="certificates"
-        className="flex flex-wrap items-center justify-center gap-10 py-4 mt-10 h-full w-full "
+        className="flex flex-wrap items-start justify-center gap-10 py-4 mt-10 h-full w-full "
       >
         <PortraitCert certImg={registration} certName={"Trust registration certificate"} />
 

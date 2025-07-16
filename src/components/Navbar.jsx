@@ -1,16 +1,20 @@
-import { faOldRepublic } from "@fortawesome/free-brands-svg-icons";
+ 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Logo from "./Logo";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleHamburgMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const handleDonateRedirect = ()=>{
+    window.location.href = "https://razorpay.me/@bababhaskarpawarvrudhashramtr";
+  }
 
   return (
     <div
@@ -23,7 +27,7 @@ const Navbar = () => {
       >
         <Logo name={'प्रेरणास्थान'}/>
 
-        <div className="hidden lg:flex gap-2 lg:gap-6 font-medium  ">
+        <div className="hidden lg:flex gap-2 lg:gap-6 xl:text-base font-medium  ">
           <Link to={"/home"}>Home</Link>
           <Link to={"/about"}>About</Link>
           <Link to={"/services"}>Services</Link>
@@ -34,7 +38,7 @@ const Navbar = () => {
       </div>
 
       <div id="menu" className=" flex items-center gap-4 ">
-        <button className="bg-white px-5 text-xs py-1 rounded-xl font-medium active:outline active:outline-2 focus:outline-red-500 active:scale-[0.9] cursor-pointer">
+        <button onClick={handleDonateRedirect} className="bg-white px-5 xl:px-8 xl:py-2 text-xs xl:text-sm py-1  rounded-xl xl:rounded-2xl font-medium active:outline active:outline-2 focus:outline-red-500 active:scale-[0.9] cursor-pointer">
           donate
         </button>
 

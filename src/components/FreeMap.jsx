@@ -27,7 +27,7 @@ const FreeMap = ({styling}) => {
     const position = [19.54053465640802, 72.91772052870918];
     
   return (
-    <MapContainer className={styling} center={position} zoom={13}  >
+    <MapContainer className={styling} center={position} zoom={10}  >
       <TileLayer
        
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

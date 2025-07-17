@@ -4,13 +4,20 @@ import registration from "../assets/images/registration-certificate.png";
 import yellowSvg from "../assets/svgs/yellow-elem.svg";
 import pancard from "../assets/images/PAN-Card.jpg";
 import iso from "../assets/images/iso-certificate.png";
-import PortraitCert from "../components/PortraitCert";
-import LandscapeCert from "../components/LandscapeCert";
-import PdfViewer from "../components/PdfViewer";
+import certificate80G from "../assets/images/Certificate-80G.png";
+import certificate12A from "../assets/images/Certificate-12-A.png";
+import Cert from "../components/Cert";
 
 const Certificates = () => {
-  return (
-    // https://docs.google.com/viewerng/viewer?url=https://bababhaskarpawarvrudhashram.org/wp-content/uploads/2022/11/9001-BABA-BHASKAR-PAWAR-VRUDHASHRAM-TRUST-_page-0001-1.pdf
+
+  const certLink1 = "https://i0.wp.com/bababhaskarpawarvrudhashram.org/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-08-at-11.19.01-AM.jpeg?resize=768%2C1024&ssl=1";
+  const certIso = "https://docs.google.com/viewerng/viewer?url=https://bababhaskarpawarvrudhashram.org/wp-content/uploads/2022/11/9001-BABA-BHASKAR-PAWAR-VRUDHASHRAM-TRUST-_page-0001-1.pdf";
+  const cert80G = "https://docs.google.com/viewerng/viewer?url=https://bababhaskarpawarvrudhashram.org/wp-content/uploads/2022/11/80G-Granted.pdf";
+  const cert12A = "https://docs.google.com/viewerng/viewer?url=https://bababhaskarpawarvrudhashram.org/wp-content/uploads/2022/11/AACTB2602HE20219_signed12A.pdf";
+  const certPanCard = "https://i0.wp.com/bababhaskarpawarvrudhashram.org/wp-content/uploads/2022/11/PAN-Card.jpg?w=638&ssl=1";
+  
+  return ( 
+    
     <div className=" relative w-full  p-6 md:pt-20 xl:px-[7%] mb-25 ">
       <div id="part-one" >
         <img
@@ -32,15 +39,15 @@ const Certificates = () => {
         id="certificates"
         className="flex flex-wrap items-start justify-center gap-10 py-4 mt-10 h-full w-full "
       >
-        <PortraitCert certImg={registration} certName={"Trust registration certificate"} />
 
-        <PortraitCert certImg={iso} certName={"iso 9001 certification"} />
+        <Cert certLink={certLink1} certImg={registration} certName={"Trust registration certificate"}/>
+        <Cert certLink={certIso} certImg={iso} certName={"iso 9001 certification"}/> 
+        <Cert certLink={cert80G} certImg={certificate80G} certName={"80G certification"}/> 
+        <Cert certLink={cert12A} certImg={certificate12A} certName={"12 A certification"}/> 
+        <Cert certLink={certPanCard}   certImg={pancard} certName={"Pan Card"} />
 
-        <LandscapeCert certImg={pancard} certName={"Pan Card"} />
-        
-        {/* <PdfViewer/> */}
 
-        <div className="w-full md:w-[40%]   flex flex-col items-center shrink-[0] bg-[#FFD9B3] rounded-lg p-2 ">
+        <div className="w-full h-96 md:w-[40%] lg:w-[35%] xl:w-[25%] 2xl:w-[20%]   flex flex-col items-center shrink-[0] bg-[#FFD9B3] rounded-lg p-4 hover:scale-[1.1]">
           <h1 className="text-lg font-medium py-1 rounded-lg bg-[#FFF2E0] text-[#4D2300] px-4 w-fit my-4">
             "NITI AAYOG"
           </h1>

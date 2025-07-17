@@ -89,7 +89,7 @@ const Contact = () => {
       <div className=" w-full mt-10 md:w-1/2 xl:w-[45%] md:h-fit md:p-8">
         <ContactForm edit={""} />
 
-        <FreeMap styling={" mt-10 rounded-lg w-full h-60"} />
+        <FreeMap styling={" mt-10 rounded-lg w-full h-96"} />
       </div>
     </div>
   );

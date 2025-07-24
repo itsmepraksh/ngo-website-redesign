@@ -1,8 +1,56 @@
-| Role                      | Color Preview                                    | Hex Code  | Description                                        |
-| ------------------------- | ------------------------------------------------ | --------- | -------------------------------------------------- |
-| **Primary Saffron**       | ![#FF6F00](https://www.colorhexa.com/ff6f00.png) | `#FF6F00` | Deep saffron — traditional, vibrant, symbolic      |
-| **Light Saffron**         | ![#FFA040](https://www.colorhexa.com/ffa040.png) | `#FFA040` | Softer saffron — for hover effects or cards        |
-| **Muted Saffron**         | ![#FFCC80](https://www.colorhexa.com/ffcc80.png) | `#FFCC80` | Pale saffron — ideal for backgrounds or highlights |
-| **Dark Gray (Text)**      | ![#212121](https://www.colorhexa.com/212121.png) | `#212121` | Rich charcoal — strong readability for text        |
-| **Medium Gray (Borders)** | ![#9E9E9E](https://www.colorhexa.com/9e9e9e.png) | `#9E9E9E` | Neutral mid-gray — lines, dividers, secondary text |
-| **White**                 | ![#FFFFFF](https://www.colorhexa.com/ffffff.png) | `#FFFFFF` | Clean background — keeps design open and light     |
+
+# NGO Website – New Look
+
+This project is a redesigned version of an existing NGO website, aimed at giving it a modern, user-friendly, and responsive new look using React and Tailwind CSS.
+
+---
+
+## 🚀 Project Overview
+
+This is a **front-end redesign project** for a Non-Governmental Organization (NGO) website. The purpose is to enhance the website's user interface, improve accessibility, and provide a cleaner, modern experience for users across devices.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Component-based UI
+- **Tailwind CSS** – Utility-first styling
+- **React Router** – SPA routing
+- **Font Awesome** – Icons and brand logos
+
+---
+ 
+## 💡 Features
+
+- Responsive layout (mobile-first)
+- Modern UI components using Tailwind
+- Clean navigation with React Router
+- Accessible forms and structure
+- Font Awesome icons (free solid and brand)
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/itsmepraksh/ngo-website-redesign.git
+cd ngo-website-redesign
+npm install
+npm start
+````
+
+---
+
+## 📌 Notes
+
+* This is a UI-only front-end project.
+* Backend/API integration (if needed) can be added later.
+* This is a work-in-progress project, built as part of a new branding initiative for the NGO.
+
+---
+
+## 📄 License
+
+This project is open for non-commercial, educational, and NGO use.
+
+---

@@ -1,17 +1,18 @@
- 
-
-const AboutDetails = ({heading, list1, list2, list3,list4}) => {
+const AboutDetails = ({ heading, list1, list2, list3,swipesrc }) => {
   return (
-     <div className="md:w-[45%] border-[1px] p-2 px-4"> 
-          <h1 className="text-sm py-3 text-[#E65E00]">{heading}</h1>
-          <ul className="text-xs flex flex-col gap-1">
-            <li>{list1}</li>
-            <li>{list2}</li>
-            <li>{list3}</li>
-            <li>{list4}</li>
-          </ul>
-        </div>
-  )
-}
+    <div className="bg-[#FFF2E0] h-full p-4 shrink-[0] w-full    lg:w-[50%]">
+      <h1 className="text-base font-bold ">{heading}</h1>
+      <ul className="p-4 flex flex-col gap-3 text text-sm list-disc">
+        <li className="">{list1}</li>
+        <li className="">
+          {list2}
+        </li>
+        <li>{list3}</li>
+      </ul>
 
-export default AboutDetails
+      <img src={swipesrc} className="object-cover  " alt="" />
+    </div>
+  );
+};
+
+export default AboutDetails;
